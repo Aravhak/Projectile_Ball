@@ -66,6 +66,34 @@ void setup()
 
 void draw()
 {
+  
+  noStroke();
+    fill(0, 0, 0, 25);
+    rect(0, 0, width, height);
+    fill(255);
+  
+  //background(0);
+  
+  if(right)
+  {
+    player.add(5,0);
+    
+  }
+  if(left)
+  {
+    player.add(-5,0);
+    
+  }
+  if(up)
+  {
+    player.add(0,-5);
+    
+  }
+  if(down)
+  {
+    player.add(0,5);
+    
+  }
 
   fill(255);
   text(score, 10, 10);
